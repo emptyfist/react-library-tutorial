@@ -1,10 +1,13 @@
 import React from 'react'
 
-import { ExampleComponent } from 'simple-button'
-import 'simple-button/dist/index.css'
+import {SimpleButton, SimpleInput} from 'simple-button'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div>
+      <SimpleButton label="Simple Button" />
+      <SimpleInput placeholder="input here" />
+    </div>);
 }
 
 export default App

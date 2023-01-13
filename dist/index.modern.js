@@ -1,13 +1,21 @@
 import { createElement } from 'react';
 
-var styles = {"test":"_3ybTi"};
-
-var ExampleComponent = function ExampleComponent(_ref) {
-  var text = _ref.text;
-  return createElement("div", {
-    className: styles.test
-  }, "Example Component: ", text);
+const SimpleButton = ({
+  label
+}) => {
+  return createElement("button", {
+    className: "emptyfist-btn"
+  }, label);
 };
 
-export { ExampleComponent };
+const SimpleInput = ({
+  placeholder
+}) => {
+  return createElement("input", {
+    className: "emptyfist-input",
+    placeholder: placeholder
+  });
+};
+
+export { SimpleButton, SimpleInput };
 //# sourceMappingURL=index.modern.js.map
